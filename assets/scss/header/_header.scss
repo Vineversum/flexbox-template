@@ -1,0 +1,28 @@
+.header {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        background-color: rgba($dark-color, 0.5);
+        max-width: 1320px;
+        margin-left: 269px;
+        border-radius: 0 0 4px 4px;
+    }
+    &-logo {
+        margin-top: 45px;
+        img {
+            max-height: 131px;
+        }
+    }
+    &-title {
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+    &-description {
+        margin-top: 18px;
+    }
+}
+
+
+

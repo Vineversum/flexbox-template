@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    
+}
+html {
+    background-image: url(../img/global-bg.jpg);
+    
+}
+h1,
+p,
+strong {
+    color: $light-color;
+}
+h1 {
+    font-family: 'lora';
+    font-weight: lighter;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+a,
+p,
+strong {
+    font-family: 'roboto';
+}
+strong {
+    letter-spacing: 0.16em;
+    // font-size: 13px;
+}
