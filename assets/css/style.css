@@ -463,7 +463,7 @@ strong {
 
 .header-navbar {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   overflow: hidden;
   border-radius: 0 0 4px 4px;
   padding: 5px 0;
@@ -480,8 +480,12 @@ strong {
     padding: 0; }
   .header-navbar__item {
     margin: 0 5px 0 5px;
-    background-color: #000000;
     border-radius: 4px; }
+    .header-navbar__item.active {
+      background-color: rgba(0, 0, 0, 0.35); }
+      .header-navbar__item.active a {
+        color: #bb1a1a;
+        text-shadow: 2px 2px 5px black; }
     .header-navbar__item a {
       display: block;
       position: relative;

@@ -1,6 +1,6 @@
 .header-navbar {
     width: 100%;
-    background-color: rgba($dark-color, 0.5);
+    background-color: rgba($dark-color, 0.25);
     overflow: hidden;
     border-radius: 0 0 4px 4px;
     padding: 5px 0;
@@ -14,9 +14,14 @@
     }
     &__item {
         margin: 0 5px 0 5px;
-        
-        background-color: $dark-color;
         border-radius: 4px;
+        &.active {
+            background-color: rgba($dark-color, 0.35);
+            a {
+                color: $main-color-highlighted;
+                text-shadow: 2px 2px 5px black;
+            }
+        }
         a {
             display: block;
             position: relative;
