@@ -446,7 +446,7 @@ strong {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   max-width: 1320px;
-  margin-left: 269px;
+  margin: 0 auto;
   border-radius: 0 0 4px 4px; }
 
 .header-logo {
