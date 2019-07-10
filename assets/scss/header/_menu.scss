@@ -1,4 +1,4 @@
-.header-navbar {
+.header-menu {
     width: 100%;
     background-color: rgba($dark-color, 0.25);
     overflow: hidden;
@@ -28,10 +28,6 @@
             padding: 14px;
             width: 100%;
             height: 100%;
-            text-decoration: none;
-            color: $light-color;
-            font-size: 13px;
-            letter-spacing: 0.065em;
         }
     }
 }
