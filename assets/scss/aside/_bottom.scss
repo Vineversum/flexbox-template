@@ -1,0 +1,12 @@
+.bottom-sidebar {
+    display: flex;
+    justify-content: space-between;
+    p {
+        line-height: 2;
+        font-size: 14px;
+        margin: 4px 0 9px 0;
+    }
+    .widget {
+        flex-basis: 318px;
+    }
+}

@@ -1,0 +1,18 @@
+.footer {
+    .widget {
+        text-align: center;
+        margin-bottom: 30px;
+        &-head {
+            border: none;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                left: calc(50% - 150px); 
+                right: calc(50% - 150px);
+                border-bottom: 1px solid #402d0c;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.main {
+    order: 2;
+    flex-basis: 800px;
+    margin-left: $gutter;
+
+    &-title {
+        h1 {
+            font-size: 1.8rem;
+            margin: 0 0;
+            letter-spacing: 0.13em;
+        }
+        background: linear-gradient(to right, rgba($dark-color, 0.5), transparent);
+        padding: 13px 12px 14px 12px;
+        border-radius: 8px;
+        margin-top: $gutter;
+    }
+
+    &-gallery {
+        // background-color: rgba($dark-color, 0.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: $gutter;
+        
+        
+        &__item {
+            border: 5px solid rgba($dark-color, 0.5) ;
+            border-radius: 8px;
+            margin-bottom: $gutter / 2;
+            position: relative;
+            max-height: 174px;
+            img {
+                max-width: 246px;
+                max-height: 165px;
+            }
+            &-title {
+                display: block;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgba($dark-color, 0.5);
+                height: 18%;
+                width: 100%;
+                // text-align: center;
+                padding: 5px 10px 5px 10px;
+                font-family: 'roboto';
+                color: $light-color;
+                font-size: 14px;
+                letter-spacing: 0.07em;
+            }
+        }
+    }
+
+    &-navbar {
+        background: linear-gradient(to left, rgba($dark-color, 0.5), transparent);
+        padding: 10px 0 10px 0;
+        border-radius: 8px;
+        
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            li {
+                list-style: none; 
+                // text-indent: -1em; 
+                margin-right: 20px;
+                position: relative;
+                a {
+                    font-size: 14px;
+                    letter-spacing: 0.14em;
+                }
+               }
+            li:not(:first-of-type)::before {
+            content: '\25ba'; 
+            position: absolute;
+            left: -15px;
+            top: 3px;
+            color: white; 
+            font-size: 0.7rem;
+            }
+            li:not(:last-of-type) {
+                font-weight: bold;
+            }
+            
+        }
+    }
+}

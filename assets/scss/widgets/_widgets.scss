@@ -1,0 +1,37 @@
+.widget {
+    background-color: rgba($dark-color, 0.5);
+    border-radius: 7px;
+    padding: 8px 15px;
+    &-head {
+        border-bottom: 1px solid #402d0c;
+        color: $light-color;
+        font-size: 17px;
+        letter-spacing: 0.14em;
+        padding: 12px 0px 12px 0px;
+        // width: 100%;
+    }
+    &-body {
+        padding: 12px 0;
+        
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 11px 0 16px 0;
+        li {
+            margin-bottom: 14px;
+            
+        }
+        a {
+            font-size: 14px;
+            letter-spacing: 0.005em;
+        }
+    }
+    
+}
+
+
+.bottom-sidebar {
+    order: 4;
+    flex-basis: 100%;
+}

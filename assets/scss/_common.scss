@@ -33,3 +33,11 @@ a {
     font-size: 13px;
     letter-spacing: 0.065em;
 }
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: flex-start;
+} 
