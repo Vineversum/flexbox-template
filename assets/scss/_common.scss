@@ -25,7 +25,6 @@ strong {
 }
 strong {
     letter-spacing: 0.16em;
-    // font-size: 13px;
 }
 a {
     text-decoration: none;
@@ -37,7 +36,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     max-width: 1320px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     justify-content: center;
     align-items: flex-start;
 } 

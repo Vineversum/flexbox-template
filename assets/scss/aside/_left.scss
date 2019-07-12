@@ -3,18 +3,38 @@
     flex-basis: 220px;
     .widget:not(:first-child) {
         margin-top: $gutter / 2;
-
     }
-    &__about {
-        p {
-            line-height: 2;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 5px 15px 5px 15px;
+        li {
+            position: relative;
+            padding: 7px 0;
+            &:hover,
+            &:active {
+                background-color: rgba($dark-color, 0.35);
+                color: $main-color-highlighted;
+                text-shadow: 2px 2px 5px black;
+                border-radius: 4px;
+                a {
+                    transform: translateX(7px);
+                    color: $main-color-highlighted;
+                }
+            }
+        }
+        a {
             font-size: 14px;
-            margin: 4px 0 9px 0;
+            letter-spacing: 0em;
+            display: block;
+            // position: absolute;
+            height: 100%;
         }
     }
     &__search {
         button {
             padding: 4px 7px 4px 7px;
+            margin-left: 15px;
             border-radius: 4px 0 0 4px;
             border: 1px solid #8d8360;
             border-right: none;

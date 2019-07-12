@@ -29,12 +29,15 @@
             margin-bottom: $gutter / 2;
             position: relative;
             max-height: 174px;
+            max-width: 256px;
             img {
-                max-width: 246px;
-                max-height: 165px;
+                // max-width: 246px;
+                // max-height: 165px;
+                height: 100%;
+                width: 100%;
             }
             &-title {
-                display: block;
+                // display: block;
                 position: absolute;
                 top: 0px;
                 left: 0px;
@@ -47,6 +50,30 @@
                 color: $light-color;
                 font-size: 14px;
                 letter-spacing: 0.07em;
+            }
+            &-description {
+                position: absolute;
+                top: 18%;
+                height: 82%;
+                text-align: center;
+                padding: 15px;
+                font-family: 'roboto';
+                color: $light-color;
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: 1.5;
+                z-index: -1;
+            }
+            a:hover,
+            a:active {
+                .main-gallery__item-description {
+                    background-color: rgba($dark-color, 0.8);
+                    z-index: 1;
+                }
+                .main-gallery__item-title {
+                    background-color: rgba($dark-color, 0.8);
+                    color: $main-color-highlighted;
+                }
             }
         }
     }

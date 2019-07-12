@@ -5,30 +5,54 @@
     &__article {
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        margin: 3px 0 6px 0;
         &-title {
             flex-basis: 100%;
             font-size: 14px;
             font-family: 'roboto';
             letter-spacing: 0.07em;
-            margin: 8px 0 12px 0;
-            // font-weight: 100;
+            margin: 5px 15px 12px 15px;
             color: $light-color;
         }
         &-image {
             flex-basis: 75px;
             border-radius: 4px;
-            margin-bottom: 3px;
+            margin: 0 0 3px 15px;
             img {
                 max-width: 100%;
+                margin: 0;
             }
         }
         &-description {
             font-size: 12px;
-            margin-left: 10px;
-            flex-basis: calc(100% - 75px - 10px);
+            flex-basis: calc(100% - 75px - 25px);
             margin: 0;
-            margin-left: 10px;
+            padding: 0 10px 0 10px;
             line-height: 1.6;
+            letter-spacing: 0.025em;
+            color: $gray-color;
+        }
+    }
+
+    &__articles {
+        a {
+            position: relative;
+            display: block;
+            z-index: 1;
+            &:hover,
+            &:active {
+                .right-sidebar__article {
+                    background-color: rgba($dark-color, 0.1);
+                }
+                .right-sidebar__article-title {
+                    color: $main-color-highlighted;
+                    text-shadow: 2px 2px 5px black;
+                }
+                .right-sidebar__article-description {
+                    color: $light-color;
+                }
+            }
         }
     }
 }
