@@ -729,6 +729,10 @@ a {
     .right-sidebar__articles a:hover .right-sidebar__article-description, .right-sidebar__articles a:active .right-sidebar__article-description {
       color: #eeeeee; }
 
+@media (max-width: 1200px) and (min-width: 993px) {
+  .right-sidebar {
+    border: 10px solid red; } }
+
 .bottom-sidebar {
   display: -webkit-box;
   display: -ms-flexbox;

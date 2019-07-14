@@ -56,3 +56,11 @@
         }
     }
 }
+
+
+@media (max-width: 1200px) and (min-width: 992px + 1) {
+    // 992 .. 1200
+    .right-sidebar{
+        border: 10px solid red;
+    }
+}
