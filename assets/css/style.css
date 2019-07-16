@@ -903,7 +903,10 @@ form {
   border-radius: 0 4px 4px 0;
   border: 1px solid #8d8360;
   background-color: rgba(238, 238, 238, 0.1);
-  width: calc(100% - 57px); }
+  width: calc(100% - 57px);
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
   .left-sidebar__search input::-webkit-input-placeholder {
     color: #eeeeee; }
   .left-sidebar__search input:-ms-input-placeholder {

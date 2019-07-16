@@ -23,6 +23,8 @@ form {
         border: 1px solid #8d8360;
         background-color: rgba($light-color, 0.1);
         width: calc(100% - 57px);
+        white-space: nowrap;
+        text-overflow: ellipsis;
         &::placeholder {
             color: $light-color;
         }
