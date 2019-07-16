@@ -32,30 +32,6 @@
             transition-duration: 0.5s;
         }
     }
-    &__search {
-        button {
-            padding: 4px 7px 4px 7px;
-            margin-left: 15px;
-            border-radius: 4px 0 0 4px;
-            border: 1px solid #8d8360;
-            border-right: none;
-            background-color: rgba($light-color, 0.1);
-            i {
-                color: $light-color;
-            }
-        }
-        input {
-            font-size: 12px;
-            color: $light-color;
-            padding: 4px 0px 4px 7px;
-            border-radius: 0 4px 4px 0;
-            border: 1px solid #8d8360;
-            background-color: rgba($light-color, 0.1);
-            &::placeholder {
-                color: $light-color;
-            }
-        }
-    }
 }
 
 

@@ -730,30 +730,6 @@ a {
       -webkit-transition-duration: 0.5s;
       -o-transition-duration: 0.5s;
       transition-duration: 0.5s; }
-  .left-sidebar__search button {
-    padding: 4px 7px 4px 7px;
-    margin-left: 15px;
-    border-radius: 4px 0 0 4px;
-    border: 1px solid #8d8360;
-    border-right: none;
-    background-color: rgba(238, 238, 238, 0.1); }
-    .left-sidebar__search button i {
-      color: #eeeeee; }
-  .left-sidebar__search input {
-    font-size: 12px;
-    color: #eeeeee;
-    padding: 4px 0px 4px 7px;
-    border-radius: 0 4px 4px 0;
-    border: 1px solid #8d8360;
-    background-color: rgba(238, 238, 238, 0.1); }
-    .left-sidebar__search input::-webkit-input-placeholder {
-      color: #eeeeee; }
-    .left-sidebar__search input:-ms-input-placeholder {
-      color: #eeeeee; }
-    .left-sidebar__search input::-ms-input-placeholder {
-      color: #eeeeee; }
-    .left-sidebar__search input::placeholder {
-      color: #eeeeee; }
 
 @media (max-width: 992px) and (min-width: 577px) {
   .left-sidebar {
@@ -904,11 +880,38 @@ a {
   flex-basis: 100%; }
 
 form {
-  max-width: 150px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 5px 0 2px 0; }
+
+.left-sidebar__search button {
+  padding: 4px 7px 4px 7px;
+  margin-left: 15px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #8d8360;
+  border-right: none;
+  background-color: rgba(238, 238, 238, 0.1); }
+  .left-sidebar__search button i {
+    color: #eeeeee; }
+
+.left-sidebar__search input {
+  font-size: 12px;
+  color: #eeeeee;
+  padding: 4px 0px 4px 7px;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #8d8360;
+  background-color: rgba(238, 238, 238, 0.1);
+  width: calc(100% - 57px); }
+  .left-sidebar__search input::-webkit-input-placeholder {
+    color: #eeeeee; }
+  .left-sidebar__search input:-ms-input-placeholder {
+    color: #eeeeee; }
+  .left-sidebar__search input::-ms-input-placeholder {
+    color: #eeeeee; }
+  .left-sidebar__search input::placeholder {
+    color: #eeeeee; }
 
 .footer {
   max-width: 1320px;
