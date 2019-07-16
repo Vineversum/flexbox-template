@@ -15,12 +15,11 @@
             &:hover,
             &:active {
                 background-color: rgba($dark-color, 0.35);
-                color: $main-color-highlighted;
-                text-shadow: 2px 2px 5px black;
                 border-radius: 4px;
+                padding-left: 7px;
                 a {
-                    transform: translateX(7px);
                     color: $main-color-highlighted;
+                    text-shadow: 2px 2px 5px black;
                 }
             }
         }

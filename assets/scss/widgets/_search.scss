@@ -25,8 +25,12 @@ form {
         width: calc(100% - 57px);
         white-space: nowrap;
         text-overflow: ellipsis;
+        outline: none;
         &::placeholder {
             color: $light-color;
+        }
+        &:active {
+            border: 1px solid #8d8360;
         }
     }
 }
