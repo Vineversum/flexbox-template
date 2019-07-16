@@ -7,6 +7,9 @@ html {
     background-image: url(../img/global-bg.jpg);
     
 }
+body {
+    padding: 0 30px;
+}
 h1,
 p,
 strong {
@@ -34,9 +37,21 @@ a {
 }
 .wrapper {
     display: flex;
-    flex-wrap: wrap;
     max-width: 1320px;
-    margin: 30px auto 0 auto;
-    justify-content: center;
+    margin: 30px auto 0px auto;
+    justify-content: space-between;
     align-items: flex-start;
 } 
+
+@media (max-width: $large)  {
+    // 992 .. 1200
+    body {
+        padding: 0 15px;
+    }
+    .wrapper {
+        flex-wrap: wrap;
+        max-width: 1170px;
+        
+    }
+}
+

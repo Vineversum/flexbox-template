@@ -1,7 +1,7 @@
 .right-sidebar {
-    flex-basis: 240px;
+    max-width: 240px;
     order: 3;
-    margin-left: $gutter;
+    margin-bottom: 15px;
     &__article {
         display: flex;
         flex-wrap: wrap;
@@ -9,14 +9,21 @@
         margin: 3px 0 6px 0;
         &-title {
             flex-basis: 100%;
+            order: 1;
             font-size: 14px;
+            flex-shrink: 2;
             font-family: 'roboto';
             letter-spacing: 0.07em;
             margin: 5px 15px 12px 15px;
             color: $light-color;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &-image {
-            flex-basis: 75px;
+            width: 75px;
+            height: 75px;
+            order: 2;
             border-radius: 4px;
             margin: 0 0 3px 15px;
             img {
@@ -25,13 +32,17 @@
             }
         }
         &-description {
+            order: 3;
             font-size: 12px;
-            flex-basis: calc(100% - 75px - 25px);
+            width: calc(100% - 75px - 25px);
+            flex-shrink: 2;
             margin: 0;
             padding: 0 10px 0 10px;
             line-height: 1.6;
             letter-spacing: 0.025em;
             color: $gray-color;
+            max-height: 80px;
+            overflow: hidden;
         }
     }
 
@@ -43,13 +54,16 @@
             &:hover,
             &:active {
                 .right-sidebar__article {
+                    transition-duration: 0.5s;
                     background-color: rgba($dark-color, 0.1);
                 }
                 .right-sidebar__article-title {
+                    transition-duration: 0.5s;
                     color: $main-color-highlighted;
                     text-shadow: 2px 2px 5px black;
                 }
                 .right-sidebar__article-description {
+                    transition-duration: 0.5s;
                     color: $light-color;
                 }
             }
@@ -61,6 +75,33 @@
 @media (max-width: 1200px) and (min-width: 992px + 1) {
     // 992 .. 1200
     .right-sidebar{
-        border: 10px solid red;
+        max-width: 100%;
+        margin-top: 15px;
+        &__article-title {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: $middle) and (min-width: $xsmall + 1) {
+    // 768 .. 992
+    .right-sidebar {
+        order: 3;
+        max-width: calc(50% - 7.5px);
+        margin-left: 7.5px;
+        &__article-title {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: $xsmall) {
+    // < 576
+    .right-sidebar {
+        order: 3;
+        max-width: 100%;
+        &__article-title {
+            max-width: 100%;
+        }
     }
 }
