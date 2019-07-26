@@ -55,3 +55,18 @@ a {
     }
 }
 
+@media (max-width: $small) and (min-width: $xsmall + 1) {
+    // 576 .. 768
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.25rem;
+    }
+}
+
+@media (max-width: $xsmall) {
+    // < 576
+    h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.25rem;
+    }
+}

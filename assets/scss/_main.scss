@@ -96,10 +96,12 @@
             display: flex;
             justify-content: flex-end;
             margin: 0;
+            flex-wrap: wrap;
             li {
                 list-style: none; 
                 margin-right: 20px;
                 position: relative;
+                overflow: visible;
                 a {
                     font-size: 14px;
                     letter-spacing: 0.14em;
@@ -109,15 +111,15 @@
                         text-shadow: 2px 2px 5px black;
                     }
                 }
-               }
-            li:not(:first-of-type)::before {
-            content: '\25ba'; 
-            position: absolute;
-            left: -15px;
-            top: 3px;
-            color: white; 
-            font-size: 0.7rem;
+                i {
+                    position: absolute;
+                    right: -22px;
+                    height: 15px;
+                    width: 15px;
+                    color: white;
+                }
             }
+            
             li:not(:last-of-type) {
                 font-weight: bold;
             }
